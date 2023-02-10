@@ -1,4 +1,4 @@
-import Transaction
+import cashier
 
 # TEST CASE: ALL FEATURES
 
