@@ -1,7 +1,7 @@
+# Import module cashier.py
 import cashier
 
-# TEST CASE: ALL FEATURES
-
+# ADD INSTANCE
 transaction_test = cashier.Transaction()
 
 # FEATURE: ADD ITEM 
