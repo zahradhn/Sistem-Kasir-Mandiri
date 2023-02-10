@@ -1,8 +1,8 @@
 # Import module cashier.py
 import cashier
 
-# Test case
-trnsct_123 = Transaction()
+# Instance for test case
+trnsct_123 = cashier.Transaction()
 
 # Test Case 1
 print("Test Case 1")
