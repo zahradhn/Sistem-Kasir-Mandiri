@@ -17,7 +17,8 @@ Sistem kasir mandiri sederhana yang dibuat menggunakan bahasa pemrograman Python
 3. Module 'test.py' berisi berfungsi untuk menjalankan test case yang diberikan oleh Pacmann.
 
 # Flowchart
-![Flowcode](https://user-images.githubusercontent.com/123977443/218324598-a08575eb-0b67-44d4-b3f4-7efbdd300c95.jpg)
+Alur program sistem kasir mandiri ini sebagai berikut:
+![Flowchart cashier](https://user-images.githubusercontent.com/123977443/218341355-bc80bee3-346a-4998-9864-3fba3c99c1da.png)
 
 # Method
 1. Method `add_item` untuk menambahkan item ke dalam transaksi.
