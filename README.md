@@ -19,13 +19,13 @@ Sistem kasir mandiri sederhana yang dibuat menggunakan bahasa pemrograman Python
 2. Module 'trial.py' berfungsi untuk membuat koneksi ke server dan database.
 3. Module 'test.py' berfungsi untuk menjalankan test case yang diberikan.
 
-# Fungsi atau Method yang Dibutuhkan
-1. Method `add_item` untuk menambahkan item ke dalam transaksi.
-4. Method `update_item_name`, `update_item_quantity`, dan `update_item_price` untuk mengubah nama item, jumlah item, dan harga per item jika terjadi kesalahan.
-5. Method `delete_item` untuk menghapus item dari transaksi.
-6. Method `reset_transaction` untuk mengosongkan atau menghapus semua item dari keranjang belanja.
-7. Method `check_order` untuk menampilkan seluruh pemesanan yang telah dibuat dalam bentuk tabel.
-8. Method `hitung_total_price` untuk menghitung harga total dan diskon yang didapatkan dari seluruh item yang telah ditambahkan.
-
 # Flowchart
+![Flowcode](https://user-images.githubusercontent.com/123977443/218324598-a08575eb-0b67-44d4-b3f4-7efbdd300c95.jpg)
 
+# Fungsi yang Dibutuhkan
+1. Fungsi `add_item` untuk menambahkan item ke dalam transaksi.
+4. Fungsi `update_item_name`, `update_item_quantity`, dan `update_item_price` untuk mengubah nama item, jumlah item, dan harga per item jika terjadi kesalahan.
+5. Fungsi `delete_item` untuk menghapus item dari transaksi.
+6. Fungsi `reset_transaction` untuk mengosongkan atau menghapus semua item dari keranjang belanja.
+7. Fungsi `check_order` untuk menampilkan seluruh pemesanan yang telah dibuat dalam bentuk tabel.
+8. Fungsi `hitung_total_price` untuk menghitung harga total dan diskon yang didapatkan dari seluruh item yang telah ditambahkan.
