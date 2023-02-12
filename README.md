@@ -20,17 +20,21 @@ Sistem kasir mandiri sederhana yang dibuat menggunakan bahasa pemrograman Python
 Alur program sistem kasir mandiri ini sebagai berikut:
 ![Flowchart cashier 2](https://user-images.githubusercontent.com/123977443/218341621-f3f91157-b5ce-4c27-89aa-736815b6e05f.png)
 
-# Penjelasan Attribute
+# Penjelasan Attribute dan Method
 1. Attribute `items` memiliki tipe list, digunakan untuk menyimpan seluruh item yang ada dalam transaksi.
 2. Attribute `total_price` merupakan variabel yang memiliki tipe float, digunakan untuk menyimpan jumlam total harga item setelah diskon.
 3. Attribute `discount` merupakan variabel yang memiliki tipe float, digunakan untuk menyimpan jumlah total diskon yang didapatkan.
+4. Attribute `self.items`
+5. Attribute `self.total_price`
+6. Attribute `self.discount`
+7. Method `add_item(self, item)` untuk menambahkan item ke dalam transaksi ke dalam list `items` yang berisi tiga elemen, diantaranya: nama item [0], jumlah item [1], dan harga per item [2].
+8. Method `update_item_name(self, item_name, new_item)` digunakan untuk memperbarui nama item. Memiliki dua parameter, `item_name` merupakan nama item yang sudah ada sebelumnya, dan `new_item` merupakan nama item yang baru.
+9. Method `update_item_quantity(self, item_name, new_quantity)` digunakan untuk memperbarui jumlah item. Memiliki dua parameter, `item_name` merupakan nama item yang jumlahnya mau diperbarui, dan `new_quantity` merupakan jumlah item yang baru.
+10. Method `update_item_price(self, item_name, new_price)` digunakan untuk memperbarui harga item. Memiliki dua parameter, `item_name` merupakan nama item yang harganya mau diperbarui, dan `new_price` merupakan harga item yang baru.
+11. Method `delete_item(self, item_name)` untuk menghapus item dari transaksi. Parameter `item_name` merupakan nama item yang mau dihapus.
+12. Method `reset_transaction(self)` untuk mengosongkan atau menghapus semua item dari keranjang belanja. Method ini memiliki output print text `Keranjang belanja telah dikosongkan!`.
+13. Method `check_order(self):` untuk menampilkan seluruh pemesanan yang telah dibuat dalam bentuk tabel yang berisi nomor item, nama item, jumlah item, harga per item, dan total harga (pengalian jumlah item dan harga per item).
+14. Method `hitung_total_price(self)` untuk menghitung harga total dan diskon yang didapatkan dari seluruh item yang telah ditambahkan ke dalam list `items`. Method ini memproses diskon 10% jika total belanja lebih dari Rp 500.000,00, 8% jika total belanja lebih dari Rp 300.000,00, atau 5% jika total belanja lebih dari Rp 200.000,00.
 
-# Penjelasan Method
-1. Method `add_item(self, item):` untuk menambahkan item ke dalam transaksi ke dalam list "items" yang berisi tiga elemen, diantaranya: nama item [0], jumlah item [1], dan harga per item [2].
-4. Method `update_item_name`, `update_item_quantity`, dan `update_item_price` untuk mengubah nama item, jumlah item, dan harga per item jika terjadi kesalahan.
-5. Method `delete_item` untuk menghapus item dari transaksi.
-6. Method `reset_transaction` untuk mengosongkan atau menghapus semua item dari keranjang belanja.
-7. Method `check_order` untuk menampilkan seluruh pemesanan yang telah dibuat dalam bentuk tabel.
-8. Method `hitung_total_price` untuk menghitung harga total dan diskon yang didapatkan dari seluruh item yang telah ditambahkan.
-
+# Test Case
 
