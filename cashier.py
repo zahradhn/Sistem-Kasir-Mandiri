@@ -4,18 +4,32 @@ from tabulate import tabulate
 # Class
 class Transaction:
     
+    """
+    Class ini menyimpan dan memproses informasi transaksi customer, yaitu item yang dibeli, total harga sebelum diskon, dan jumlah diskon.
+
+    Atribut:
+        items (list): List yang berisi nama item (str), jumlah item (int), dan harga per item (float).
+        total_price (float): Total harga sebelum diskon.
+        discount (float): Jumlah diskon.
+    """
+    
     items = []
     total_price = 0.0
     discount = 0.0
     
     def __init__(self):
-        #Inisialitasi atribut pada class Transaction
+        # Inisialitasi atribut pada class Transaction
         self.items = []
         self.total_price = 0.0
         self.discount = 0.0
     
     def add_item(self, item):
-        #Menambahkan transaksi ke dalam list "items" yang berisi nama item [0], jumlah item [1], dan harga per item [2].
+        """
+        Menambahkan transaksi ke dalam list "items" yang berisi nama item [0], jumlah item [1], dan harga per item [2].
+
+        Raises:
+            TypeError: Apabila format nama item, jumlah item, atau harga item salah.
+        """
 
         if type(item[0]) != str:
            raise TypeError("Format nama item yang anda masukkan salah (gunakan tanda petik sebelum dan sesudah nama item).")
