@@ -41,7 +41,17 @@ class Transaction:
         self.items.append(item)
     
     def update_item_name(self, item_name, new_item):
-        #Mengganti nama item yang sudah ditambahkan ke dalam list "items"
+        """
+        Mengganti/memperbarui nama item.
+
+        Parameter:
+        - item_name (str): Nama item yang ingin diganti.
+        - new_item (str): Nama item baru.
+
+        Raises:
+        TypeError: Apabila format nama item baru salah.
+        """
+        
         for item in self.items:
             if item[0] == item_name:
                 item[0] = new_item
@@ -50,7 +60,17 @@ class Transaction:
             raise TypeError("Format nama item yang anda masukkan salah (gunakan tanda petik sebelum dan sesudah nama item).")
     
     def update_item_quantity(self, item_name, new_quantity):
-        #blabla
+        """
+        Mengubah/memperbarui jumlah item.
+
+        Parameter:
+        item_name (str): Nama item yang jumlahnya ingin diganti.
+        new_quantity (int): Jumlah item baru.
+
+        Raises:
+        TypeError: Apabila format jumlah item baru salah.
+        """
+        
         for item in self.items:
             if item[0] == item_name:
                 item[1] = new_quantity
@@ -59,7 +79,17 @@ class Transaction:
             raise TypeError("Format jumlah item yang anda masukkan salah (misalnya: 12).")
     
     def update_item_price(self, item_name, new_price):
-        #blabla
+        """
+        Mengubah/memperbarui harga item.
+
+        Parameter:
+        item_name (str): Nama item yang harganya ingin diganti.
+        new_price (float): Harga item baru.
+
+        Raises:
+        TypeError: Apabila format harga item yang baru salah.
+        """
+        
         for item in self.items:
             if item[0] == item_name:
                 item[2] = new_price
@@ -68,7 +98,16 @@ class Transaction:
            raise TypeError("Format harga item yang anda masukkan salah (misalnya: 25000.00).")
 
     def delete_item(self, item_name):
-        #Delete item
+        """
+        Menghapus item dari list items.
+        
+        Parameter:
+        item_name (str): Nama item yang ingin dihapus.
+        
+        Raises:
+        TypeError: Apabila format nama item baru salah.
+        """
+        
         for item in self.items:
             if item[0] == item_name:
                 self.items.remove(item)
@@ -77,13 +116,19 @@ class Transaction:
             raise TypeError("Format nama item yang anda masukkan salah (gunakan tanda petik sebelum dan sesudah nama item).")
     
     def reset_transaction(self):
-        #Reset transaksi
+        """
+        Method ini berfungsi untuk mengosongkan atau menghapus semua item dari keranjang belanja. Method ini memiliki output print text "Keranjang belanja telah dikosongkan!."
+        """
+        
         self.items = []
         print("Keranjang belanja telah dikosongkan!")
     
     def hitung_total_price(self):
-        
-        #Menghitung total transaksi sebelum diskon
+        """
+        Method ini berfungsi untuk menghitung harga total dan diskon yang didapatkan dari seluruh item yang telah ditambahkan ke dalam list items.       
+ 
+        """
+       
         total_price = 0.0
         
         for item in self.items:
@@ -106,7 +151,9 @@ class Transaction:
         return self.total_price
     
     def check_order(self):
-        #Tabel pemesanan
+        """
+        Method ini berfungsi untuk menampilkan semua item yang telah ditambahkan pada list items dalam bentuk tabel.
+        """
         
         order_table = []
 
