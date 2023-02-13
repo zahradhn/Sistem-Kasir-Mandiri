@@ -1,5 +1,8 @@
 # Sistem Kasir Mandiri
 Sistem kasir mandiri sederhana yang dibuat menggunakan bahasa pemrograman Python untuk memudahkan customer dalam melakukan transaksi belanja. Fitur utama dalam sistem kasir ini adalah menambahkan nama item, jumlah item, dan harga item yang ingin dibeli. Lalu customer juga dapat mengubah nama item, jumlah item, dan harga item jika terdapat kesalahan saat melakukan input. Customer juga bisa menghapus salah satu atau seluruh item sekaligus jika ingin mengulang transaksi dari awal. Setelah selesai memilih item, customer dapat mengecek ulang daftar item dalam bentuk tabel, lalu menghitung total harga item yang dibeli dan diskon yang didapatkan.
+<br />
+<br />
+**Disclaimer:** Sistem kasir mandiri ini dibuat untuk memenuhi tugas akhir dalam kelas Python dari Pacmann. Cari tahu lebih lanjut tentang Pacmann dalam tautan berikut https://pacmann.io/.
 
 # Tujuan Pengerjaan Project
 1. Membuat sistem kasir mandiri sederhana menggunakan bahasa pemrograman Python yang memiliki fitur:
