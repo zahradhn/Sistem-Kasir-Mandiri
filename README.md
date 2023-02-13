@@ -40,37 +40,37 @@ Alur program sistem kasir mandiri ini sebagai berikut:
 # Test Case 1
 Menambahkan 2 item menggunakan method `add_item`.
 
-**Inputnya adalah:**
+**Inputnya adalah:**<br />
 1. `trnsct_123.add_item(["Ayam Goreng", 2, 20000.00])`
 2. `trnsct_123.add_item(["Pasta Gigi", 3, 15000.00])`
 3. `print("Item yang dibeli adalah: ", trnsct_123.items)`
 
-**Outputnya adalah:**
+**Outputnya adalah:**<br />
 ![image](https://user-images.githubusercontent.com/123977443/218346000-64117eab-85dd-4b39-82e2-ccc9eca23749.png)
 
 # Test Case 2
 Menghapus item menggunakan method `delete_item`.
 
-**Inputnya adalah:**
+**Inputnya adalah:**<br />
 1. `trnsct_123.delete_item("Pasta Gigi")`
 2. `print("Item yang dibeli adalah: ", trnsct_123.items)`
 
-**Outputnya adalah:**
+**Outputnya adalah:**<br />
 ![image](https://user-images.githubusercontent.com/123977443/218346210-a1b8d1f4-818f-423c-8095-b7d032da5e1b.png)
 
 # Test Case 3
 Menghapus semua item menggunakan method `reset_transaction`.
 
-**Inputnya adalah:**
+**Inputnya adalah:**<br />
 `trnsct_123.reset_transaction()`
 
-**Outputnya adalah:**
+**Outputnya adalah:**<br />
 ![image](https://user-images.githubusercontent.com/123977443/218346286-bc3b85eb-337c-4426-8ef1-f8df9b042a2e.png)
 
 # Test Case 4
 Menambah item belanja dan menghitung total belanja dengan method `hitung_total_price`.
 
-**Inputnya adalah:**
+**Inputnya adalah:**<br />
 1. `trnsct_123.add_item(["Ayam goreng", 2, 20000.00])`
 2. `trnsct_123.add_item(["Pasta gigi", 3, 15000.00])`
 3. `trnsct_123.add_item(["Mainan mobil", 1, 200000.00])`
@@ -79,7 +79,7 @@ Menambah item belanja dan menghitung total belanja dengan method `hitung_total_p
 6. `trnsct_123.check_order()`
 7. `trnsct_123.hitung_total_price()`
 
-**Outputnya adalah:**
+**Outputnya adalah:**<br />
 ![image](https://user-images.githubusercontent.com/123977443/218346352-059ce845-a844-43f8-b30c-71a16cabbb08.png)
 ![image](https://user-images.githubusercontent.com/123977443/218346895-8a26ab69-64b4-4be2-83e2-e09391094c1f.png)
 
