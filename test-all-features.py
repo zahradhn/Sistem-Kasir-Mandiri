@@ -4,7 +4,7 @@ import cashier
 # ADD INSTANCE
 transaction_test = cashier.Transaction()
 
-# FEATURE: ADD ITEM 
+# FEATURE: ADD ITEM
 print("Step 1: Add item")
 transaction_test.add_item(["Yakult", 2, 9800.00])
 transaction_test.add_item(["Minyak 2L", 1, 49000.00])
